@@ -20,5 +20,10 @@ public class Player : MonoBehaviour
             //points = points + 10;
 
         }
+
+        if (points >= 50)
+        {
+            Debug.Log("You are the best!");
+        }
     }
 }
