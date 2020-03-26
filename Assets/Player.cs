@@ -6,6 +6,7 @@ public class Player : MonoBehaviour
 {
 
     [SerializeField] private int points;
+    [SerializeField] private bool hasMessageBeenSent;
     void Start()
     {
 
@@ -21,9 +22,10 @@ public class Player : MonoBehaviour
 
         }
 
-        if (points >= 50)
+        if (points >= 50 && hasMessageBeenSent == false)
         {
             Debug.Log("You are the best!");
+            hasMessageBeenSent = true;
         }
     }
 }
